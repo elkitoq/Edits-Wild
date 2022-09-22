@@ -32,7 +32,7 @@ const SocialButton = ({ children, label, href, brandColor }) => {
 
 export function Footer() {
   return (
-    <Container bgColor={'#202020'} maxW={'full'} p={16}>
+    <Container bgColor={'#202020'} maxW={'full'} p={4}>
       <Stack maxWidth={'7xl'} margin={'auto'} gap={32} direction={'row'}>
         <VStack spacing={6}>
           <Image src={logo} alt={logo} />
@@ -50,13 +50,45 @@ export function Footer() {
         </VStack>
         <Stack color={'white'} spacing={2} >
           <Text as={'h2'} fontSize={28} userSelect={'none'}>Menu</Text>
-          <Link href="/#"><Text as={'p'} fontSize={18} userSelect={'none'}>Inicio</Text></Link>
-          <Link href="/#about"><Text as={'p'} fontSize={18} userSelect={'none'}>About</Text></Link>
-          <Link href="/#features"><Text as={'p'} fontSize={18} userSelect={'none'}>Video</Text></Link>
-          <Link href="/#contact"><Text as={'p'} fontSize={18} userSelect={'none'}>Contact</Text></Link>
+          <Link 
+            href="/#" 
+            _hover={{
+              textDecoration:'none',
+              color:'grey'
+            }}
+          >
+            <Text as={'p'} fontSize={18} userSelect={'none'}>Inicio</Text>
+          </Link>
+          <Link 
+            href="/#about"
+            _hover={{
+              textDecoration:'none',
+              color:'grey'
+            }}
+          >
+            <Text as={'p'} fontSize={18} userSelect={'none'}>Nosotros</Text>
+          </Link>
+          <Link 
+            href="/#features"
+            _hover={{
+              textDecoration:'none',
+              color:'grey'
+            }}
+          >
+            <Text as={'p'} fontSize={18} userSelect={'none'}>Video</Text>
+          </Link>
+          <Link 
+            href="/#contact"
+            _hover={{
+              textDecoration:'none',
+              color:'grey'
+            }}
+          >
+            <Text as={'p'} fontSize={18} userSelect={'none'}>Contactanos</Text>
+          </Link>
         </Stack>
       </Stack>
-      <Text as={'p'}></Text>
+      <Text as={'p'} color={'grey'} textAlign={'center'} userSelect={'none'}>®2022 EditsWild</Text>
     </Container>
   )
 }

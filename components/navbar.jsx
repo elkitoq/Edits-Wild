@@ -177,11 +177,11 @@ import { useEffect, useState } from 'react'
 
   const NAV_ITEMS= [
     {
-      label: 'Home',
+      label: 'Inicio',
       href: '#',
     },
     {
-      label: 'About me',
+      label: 'Nosotros',
       href: '#about',
     },
     {

@@ -9,7 +9,7 @@ export default function handler(req, res) {
     host: "smtp.gmail.com",
     auth: {
       user: 'elkitoq@gmail.com',
-      pass: 'jrkqkvwsbyluphbx',
+      pass: process.env.password,
     },
     secure: true,
   })
