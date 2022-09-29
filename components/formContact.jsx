@@ -13,21 +13,23 @@ export function FormContact() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch('api/contact', {
-      method: 'POST', // or 'PUT'
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(infoContact),
-    })
-      .then((response) => response.json())
-      .then((res) => {
-        console.log(res.status);
-        setInfoContact({nombre:'',email:'',mensaje:''})
+    if(infoContact.nombre.length > 2 && infoContact.mensaje.length > 2 && infoContact.email.length > 2) {
+      fetch('api/contact', {
+        method: 'POST', // or 'PUT'
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(infoContact),
       })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
+        .then((response) => response.json())
+        .then((res) => {
+          console.log(res.status);
+          setInfoContact({nombre:'',email:'',mensaje:''})
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+    }
   }
 
 
