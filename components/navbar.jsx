@@ -42,7 +42,14 @@ import { useEffect, useState } from 'react'
     
   
     return (
-      <Box bg={scrollY > 20 ? '#202020b0' : 'transparent'} backdropFilter={scrollY > 20 ? 'blur(8px)' : 'none'} transition={'all 1s ease-out'} position={{base: 'static', md: 'fixed'}} width="100%" zIndex={2}>
+      <Box
+        bg={scrollY > 20 ? '#202020b0' : 'transparent'}
+        backdropFilter={scrollY > 20 ? 'blur(8px)' : 'none'}
+        transition={'all 1s ease-out'}
+        position={{base: 'static', md: 'fixed'}}
+        width="100%"
+        zIndex={3}
+      >
         <Flex
           align={'center'}
           bg={'transparent'}

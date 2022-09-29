@@ -33,7 +33,7 @@ const SocialButton = ({ children, label, href, brandColor }) => {
 export function Footer() {
   return (
     <Container bgColor={'#202020'} maxW={'full'} p={4}>
-      <Stack maxWidth={'7xl'} margin={'auto'} gap={32} direction={'row'}>
+      <Stack maxWidth={'7xl'} margin={'auto'} gap={{base:10,md: 32}} direction={{base:'column',md:'row'}} justifyContent={{md:'center',xl: 'left'}}>
         <VStack spacing={6}>
           <Image src={logo} alt={logo} />
           <Stack direction={'row'} spacing={4}>
@@ -88,7 +88,7 @@ export function Footer() {
           </Link>
         </Stack>
       </Stack>
-      <Text as={'p'} color={'grey'} textAlign={'center'} userSelect={'none'}>®2022 EditsWild</Text>
+      <Text as={'p'} color={'grey'} mt={{md:'10px'}} textAlign={'center'} userSelect={'none'}>®2022 EditsWild</Text>
     </Container>
   )
 }
