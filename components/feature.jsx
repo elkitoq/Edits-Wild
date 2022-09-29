@@ -10,7 +10,7 @@ export function Feature(){
       <Box >
         <AspectRatio m={'auto'} maxW={{base: '80%',xl:'560px','2xl': '780px'}} ratio={1} height={{xl:'500px', '2xl': '600px'}} bgColor={'transparent'}>
           <iframe
-            src="https://www.youtube.com/embed/KB9dso-h_Es"
+            src="https://www.youtube.com/embed/fEui_r4X1PE"
             title="YouTube video player"
             allowfullscreen />
         </AspectRatio>
@@ -19,7 +19,7 @@ export function Feature(){
         <AspectRatio m={'auto'} maxW={{base: '80%', xl:'560px','2xl': '780px'}} height={{xl:'500px', '2xl': '600px'}} ratio={1} bgColor={'transparent'}>
           <iframe
             title='naruto'
-            src='https://www.youtube.com/embed/QhBnZ6NPOY0'
+            src="https://www.youtube.com/embed/tjRCk0JVzfc"
             allowFullScreen
           />
         </AspectRatio>
