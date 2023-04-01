@@ -76,8 +76,8 @@ export function FormContact() {
               />
               </FormControl>
             <Center>
-              <Button colorScheme='teal' width={'40%'} fontSize={24} onClick={handleSubmit} minW={'130px'}>
-                Button <ArrowForwardIcon />
+              <Button rightIcon={<ArrowForwardIcon />} colorScheme='teal' width={'40%'} fontSize={24} onClick={handleSubmit} minW={'130px'}>
+                Send
               </Button>
             </Center>
           </Stack>
